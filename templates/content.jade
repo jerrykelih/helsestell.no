@@ -6,12 +6,26 @@
               h1
                 i#logo-icon.fa.fa-heartbeat.iconLeft
                 | Helsestell.no
-              h2
-                | Enjoy your golden years independent and healthy
-              .input-group.input-group-lg
-                input.form-control(type='email', placeholder='Your Email')
-                span.input-group-btn
-                  button.btn.btn-danger(type='button') Sign up!
+
+              // Begin MailChimp Signup Form
+              #mc_embed_signup
+                  form#mc-embedded-subscribe-form.validate(action='//businessmodelusergroup.us7.list-manage.com/subscribe/post?u=5e12e973b2a9d4bb0a78804e6&id=e57642830c', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+                    #mc_embed_signup_scroll
+                      h2 Enjoy your golden years independent and healthy
+                      .input-group.input-group-lg
+                        input#mce-EMAIL.required.email.form-control(type='email', placeholder='Your Email', value='', name='EMAIL')
+                        #mce-responses.clear
+                          #mce-error-response.response(style='display:none')
+                          | &#x9;&#x9;
+                          #mce-success-response.response(style='display:none')
+                        // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                        div(style='position: absolute; left: -5000px;')
+                          input(type='text', name='b_5e12e973b2a9d4bb0a78804e6_e57642830c', tabindex='-1', value='')
+                        span.input-group-btn
+                          input#mc-embedded-subscribe.button.btn.btn-danger(type='submit', value='Sign up!', name='Sign up!')
+                // End mc_embed_signup
+
+
 
           .inner.cover
 
@@ -20,6 +34,6 @@
             .inner
               p
                 | Investor or institution?
-                a(href='mailto:terje@businessmodel.io' target='_blank')  Contact us!
+                a(href='mailto:terje@helsestell.no' target='_blank')  Contact us!
 
 
